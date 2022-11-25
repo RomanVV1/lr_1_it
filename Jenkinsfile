@@ -1,15 +1,5 @@
-pipeline {
-  agent any
-  stages {
-    stage('version') {
-      steps {
-        sh 'python3 --version'
-      }
-    }
-    stage('hello') {
-      steps {
+stage('build') {
+    steps {
         sh 'lr1.py'
-      }
     }
-  }
 }
